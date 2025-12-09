@@ -1,12 +1,39 @@
-const express = require('express');  // Importing Express
-const app = express();  // Initializing Express
+const http = require("http");
+const fs = require("fs");
+const path = require("path");
+const { error } = require("console");
+const { response } = require("express");
+//reference - lab on Node.js by Hamilton
+//Please note we did our best not copy
+const server = http.createServer((request, response) => {
+  console.log(`${request.url}${request.method}`);
 
-const port = 3000;  // Port number
+  response.setHeader("Content-type", "text/html");
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');  // Simple route to test
+  let sitePath = "./WAD CA2/";
+  switch (request.url) {
+    case "/":
+      sitePath += "index.html";
+      response.statusCode = 200;
+      break;
+    case "/bookings.html":
+      sitePath += "index.html";
+      response.statusCode = 200;
+      break;
+    case "Error.html":
+      sitePath += "index.html";
+      response.statusCode = 404;
+      break;
+  }
+  fs.readFile(sitePath, (error, data) => {
+    if (error) {
+      console.log(error);
+      response.end();
+    } else {
+      response.end(data);
+    }
+  });
 });
-
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+server.listen(5500, "localhost", () => {
+  console.log("Server running...");
 });

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PizzaCode Bookings</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="booking-layout">
+      <section id="reserve" class="reserve">
+        <h2>Bookings</h2>
+        <p>
+          We are located at 12 Dawson Street, Dublin City Centre.<br />
+          Book a table with us (limit of 6 through online reservation)<br />
+          Please call or email for groups over 6 people.
+        </p>
+        <p class="contact">
+          Phone: <a href="tel:+3531623344">+353 1623344</a><br />
+          Email: <a href="mailto:reserve@pizzacode.ie">reserve@pizzacode.ie</a>
+        </p>
+      </section>
+
+      <section class="reserve-form">
+        <h3>Online Reservation</h3>
+        <p class="reserve-intro">Reserve a table for up to 6 people.</p>
+        <form id="reserve-form" class="reserve-form-inner">
+          <div class="field">
+            <label for="name">Name*</label>
+            <input type="text" id="name" required placeholder="Full Name" />
+          </div>
+          <div class="field">
+            <label for="people">How many people?*</label>
+            <input
+              type="text"
+              id="people"
+              required
+              min="1"
+              max="6"
+              placeholder="Max 6"
+            />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Date*</label>
+              <input
+                type="date"
+                id="date-book"
+                required
+                placeholder="eg. 1/1/26"
+              />
+            </div>
+            <div class="field">
+              <label for="time">Time*</label>
+              <input type="text" id="time" required placeholder="eg. 17:30" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email*</label>
+            <input
+              type="text"
+              id="email"
+              required
+              placeholder="email@example.com"
+            />
+          </div>
+          <button type="submit" class="reserve-btn">Book</button>
+          <p id="reserve-msg" class="reserve-msg"></p>
+        </form>
+      </section>
+    </main>
+    <a href="index.html" class="page-btn">Menu</a>
+    <section id="takeaway" class="reserve">
+      <h2>Takeaway and Delivery</h2>
+      <p>
+        We also provide takeaway and delivery.<br />
+        Let us know your order below<br />
+      </p>
+      <label for="address">Address:</label>
+      <input
+        type="text"
+        id="home-delivery"
+        required
+        placeholder="123 House Street"
+      /><br />
+      <label for="contact-info">Phone Number:</label>
+      <input
+        type="text"
+        id="contact-info"
+        required
+        placeholder="Eg.0851234567"
+      /><br />
+      <label for="order-info">Your Order:</label>
+      <input
+        type="text"
+        id="order-info"
+        required
+        placeholder="Eg.Just Cheese etc."
+      /><br />
+      <label for="drinks-info">Drinks:</label>
+      <input type="text" id="drinks-info" required placeholder="Eg.Wine etc." />
+      <p>YOU MUST BE OVER 18 FOR ALCOHOLIC BEVERAGES</p>
+      <br />
+    </section>
+    <footer>
+      <p>PizzaCode is located at 15 Dawson Street, Dublin 2.</p>
+      <p>Phone: +353 1623344 Email: reserve@pizzacode.ie</p>
+      <p>Website by Ryan White and Tara Johnson-Slevin</p>
+    </footer>
+  </body>
+</html>

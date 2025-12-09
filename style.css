@@ -1,9 +1,7 @@
 body {
   background-color: white;
-  font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  background: #ffe9dd;
+  font-family: Arial, Helvetica, sans-serif;
+  background: blanchedalmond;
   color: black;
 }
 main,
@@ -19,15 +17,14 @@ footer {
   padding: 24px 16px 20px;
   background: #f37c3b;
   color: #3c2c2a;
-  border-bottom: 1px solid #f0d4c2;
 }
 .top-page h1 {
-  font-size: 50px;
-  font-weight: 350;
+  font-size: 40px;
+  font-weight: 100;
 }
 .top-page h3 {
   margin-top: 8px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 200;
 }
 .main-content {
@@ -48,17 +45,16 @@ footer {
   list-style: none;
   padding: 12px 16px 18px;
   margin-top: 0px;
-  border-bottom: 1px solid #f0d4c2;
+  border-bottom: 1px solid lightsalmon;
   background: lightsalmon;
 }
 .nav-bar li {
   cursor: pointer;
   font-size: 13px;
-  font-weight: 450;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: rgb(36, 20, 1);
-  padding-bottom: 3px;
+  letter-spacing: 2px;
+  color: white;
+  padding-bottom: 4px;
   position: relative;
 }
 .nav-bar li::after {
@@ -71,18 +67,17 @@ footer {
   background: #f37c3b;
 }
 .nav-bar li:hover {
-  color: #ffffff;
-  
+  color: #d86329;
 }
 .main {
   padding: 32px 16px 48px;
 }
 .main-content-title h2 {
-  font-size: 35px;
-  margin: 16px;
-  color: #3c2c2a;
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: black;
   text-align: center;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 #status {
@@ -100,21 +95,19 @@ footer {
 
 .product-card {
   background: #fff7ef;
-  margin: 10px;
   border-radius: 16px;
-  box-shadow: 1px 1px 10px rgba(121, 62, 31, 0.532);
-  border: 1px solid #5f360c;
-  transition: transform 0.18s ease-in-out, box-shadow 0.18s ease-in-out,
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  border: 1px solid #f0d4c2;
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out,
     border-color 0.18s ease-out;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding: 15px;
 }
 .product-card:hover {
   transform: translateY(-4px) scale(1.01);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
-  border-color: #3bdef3;
+  border-color: #f37c3b;
 }
 .product-image {
   width: 100%;
@@ -125,21 +118,21 @@ footer {
 }
 .product-card h3 {
   font-size: 18px;
-  color: #000000;
+  color: #3c2c2a;
   margin-bottom: 4px;
-  font-weight: 700;
+  font-weight: 200;
 }
 .product-card p {
   font-size: 14px;
-  color: #212121;
+  color: #5b4a43;
   margin-bottom: 2px;
-  font-weight: 400;
+  font-weight: 200;
 }
 .product-card p strong {
   display: inline-block;
   margin-top: 6px;
   font-size: 16px;
-  color: #f7064e;
+  color: #d86329;
 }
 
 footer {
