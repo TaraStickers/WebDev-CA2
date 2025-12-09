@@ -1,3 +1,10 @@
+/*font: https://fonts.google.com/selection/embed */
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,13 +26,18 @@ footer {
   color: #3c2c2a;
 }
 .top-page h1 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 500;
 }
 .top-page h3 {
+  font-family: "Bebas Neue", sans-serif;
   margin-top: 8px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 200;
+}
+.bookingButton {
+  text-align: center;
 }
 .main-content {
   background-color: black;
@@ -73,6 +85,7 @@ footer {
   padding: 32px 16px 48px;
 }
 .main-content-title h2 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
   margin-bottom: 16px;
   color: black;
@@ -94,6 +107,7 @@ footer {
 }
 
 .product-card {
+  padding: 15px;
   background: #fff7ef;
   border-radius: 16px;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
@@ -117,6 +131,7 @@ footer {
   margin-bottom: 10px;
 }
 .product-card h3 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 18px;
   color: #3c2c2a;
   margin-bottom: 4px;
@@ -133,6 +148,7 @@ footer {
   margin-top: 6px;
   font-size: 16px;
   color: #d86329;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 footer {
@@ -160,7 +176,8 @@ footer {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 .reserve h2 {
-  font-size: 26px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
   margin-bottom: 12px;
   color: #3c2c2a;
   font-weight: 600;
@@ -186,7 +203,8 @@ footer {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
 }
 .reserve-form h3 {
-  font-size: 22px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
   margin-bottom: 6px;
   font-weight: 600;
 }
@@ -194,6 +212,8 @@ footer {
   font-size: 22px;
   margin-bottom: 14px;
   color: #ffe9dd;
+  font-family: "Bebas Neue", sans-serif;
+  
 }
 .reserve-form-inner {
   display: flex;
@@ -236,16 +256,18 @@ footer {
 .reserve-btn {
   margin-top: 18px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 25px;
   border-radius: 999px;
   border: none;
   background: #ffffff;
   color: #d86329;
   font-weight: 700;
   cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
 }
 .reserve-btn:hover {
   background: #ffe9dd;
+  text-decoration: underline;
 }
 .reserve-msg {
   margin-top: 10px;
@@ -257,7 +279,9 @@ footer {
   max-width: 900px;
   margin: 40px auto;
 }
-
+.menuButton {
+  text-align: center;
+}
 .page-btn {
   display: inline-block;
   padding: 10px 24px;
@@ -271,6 +295,7 @@ footer {
   transition: all 0.2s ease;
 }
 .page-btn:hover {
+  text-decoration: underline;
   background: #ffe9dd;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
