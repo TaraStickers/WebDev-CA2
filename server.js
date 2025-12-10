@@ -37,3 +37,8 @@ const server = http.createServer((request, response) => {
 server.listen(5500, "localhost", () => {
   console.log("Server running...");
 });
+
+//mongoose
+mongoose.connection.once("open", () => {
+    console.log("Connected to:", mongoose.connection.name);
+});

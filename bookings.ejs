@@ -1,0 +1,9 @@
+<h1><%= title%></h1>
+
+<ul>
+    <%bookings.forEach(booking => { %>
+        <li>
+            <%= booking.name %> : <%= booking.people %> people on <%= booking.date %> at <%= booking.time %>
+        </li>
+    <% }) %>
+</ul>
