@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voucher</title>
+     <link rel="stylesheet" href="/public/styles/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="top-page">
+      <h1>PizzaCode</h1>
+      <h3>Buy a voucher today</h3>
+      <div class="logo">
+        <img src="public/images/logo.png" alt="logo" />
+      </div>
+    </div>
+
+    <main>
+      <div class="main-content-title">
+        <a href="index.html" class="page-btn">Menu</a>
+        <a href="bookings.html" class="page-btn">Book a table here</a>
+        <div class="main">
+ <section id="reserve" class="reserve">
+        <h2>Vouchers</h2>
+        <p>
+          We are located at 15 Dawson Street, Dublin City Centre.<br />
+          Buy a voucher for someone today<br />
+          Treat them this Christmas with vouchers up to €150!</p>
+          <div class="voucher-buy">
+            <h3>Purchase here</h3>
+
+            <label for="voucher-amnt">Choose an option below:</label>
+            <select id="voucher-amnt">
+             <option value="25">€25</option>
+             <option value="50">€50</option>
+             <option value="75">€75</option>
+             <option value="100">€100</option>
+             <option value="150">€150</option>
+            </select>
+            <form class="person">
+              <label>Receiver name:</label>
+              <input type="text" name="to" required><br>
+                <label>Receiver email:</label>
+              <input type="email" name="mailto" required><br>
+               <label>Sender name:</label>
+              <input type="text" name="from" required>
+            </form>
+            <button type="button" id="buybutton" class="page-btn">Buy now</button>
+          </div>
+        <p class="contact">
+          Phone: <a href="tel:+3531623344">+353 1623344</a><br />
+          Email: <a href="mailto:reserve@pizzacode.ie">reserve@pizzacode.ie</a>
+        </p>
+      </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>PizzaCode is located at 15 Dawson Street, Dublin 2.</p>
+      <p>Phone: +353 1623344 Email: reserve@pizzacode.ie</p>
+      <p>Website by Ryan White and Tara Johnson-Slevin</p>
+    </footer>
+  </body>
+</html>

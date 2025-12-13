@@ -92,11 +92,11 @@ function bookingForm() {
   if (!form || !msg) return;
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    //e.preventDefault();
 
     var name = document.getElementById("name").value;
     var people = document.getElementById("people").value;
-    var date = document.getElementById("date").value;
+    var date = document.getElementById("date-book").value;
     var time = document.getElementById("time").value;
     var email = document.getElementById("email").value;
 
