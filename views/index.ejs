@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+  <body>
+    <div class="top-page">
+      <h1>PizzaCode</h1>
+      <h3>Hey we are a new Italian restaurant based in Dublin City centre!</h3>
+
+      <div class="logo">
+        <img src="/images/logo.png" alt="logo" />
+      </div>
+    </div>
+
+    <ul class="nav-bar">
+      <li data-category="All">All</li>
+      <li data-category="Pizza">Pizza</li>
+      <li data-category="Pasta">Pasta</li>
+      <li data-category="Side">Sides</li>
+      <li data-category="Drinks">Drinks</li>
+    </ul>
+
+    <main>
+      <div class="bookingButton">
+        <br>
+        <a href="/bookings" class="page-btn">Book a table here</a>
+        <a href="/voucher" class="page-btn">Vouchers</a>
+      </div>
+
+      <div class="main-content-title">
+        <h2>Full Menu</h2>
+
+        <div class="main">
+          <p id="status">Loading products...</p>
+          <div id="product-grid" class="product-card"></div>
+        </div>
+      </div>
+    </main>
+
+<%- include('partials/footer') %>

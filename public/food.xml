@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <pizzas>
+        <product id="Just Cheese">
+            <name>Just Cheese</name>
+            <description>Creamy Mozzarella and Tomato base</description>
+            <price>€14.99</price>
+            <image>images/pizza.jpg</image>
+            <category>Pizza</category>
+        </product>
+        <product id="Pepperoni">
+            <name>Pepperoni</name>
+            <description>Pepperoni, Creamy Mozzarella and Tomato base</description>
+            <price>€15.99</price>
+            <image>images/pizza.jpg</image>
+            <category>Pizza</category>
+        </product>
+        <product id="Chicken and Bacon">
+            <name>Chicken and Bacon</name>
+            <description>Chicken, Bacon, Creamy Mozzarella and Tomato base</description>
+            <price>€15.99</price>
+            <image>images/pizza.jpg</image>
+            <category>Pizza</category>
+        </product>
+        <product id="Ham">
+            <name>Ham</name>
+            <description>Ham, Creamy Mozzarella and Tomato base</description>
+            <price>€15.99</price>
+            <image>images/pizza.jpg</image>
+            <category>Pizza</category>
+        </product>
+        <product id="All the Meats">
+            <name>All the Meats</name>
+            <description>Chicken, Bacon, Ham, Pepperoni,Creamy Mozzarella and Tomato base</description>
+            <price>€18.99</price>
+            <image>images/pizza.jpg</image>
+            <category>Pizza</category>
+        </product>
+    </pizzas>
+    <pasta>
+        <product id="Spaggetti Bolognese">
+            <name>Spaggetti Bolognese</name>
+            <description>Home made spaggetti pasta with slow cooked steak mince and a creamy tomato ragu sauce</description>
+            <price>€17.99</price>
+            <image>images/pasta.jpg</image>
+            <category>Pasta</category>
+        </product>
+        <product id="Carbonara">
+            <name>Creamy Carbonara</name>
+            <description>Creamy Carbonara with bacon and Home made pasta</description>
+            <price>€18.99</price>
+            <image>images/pasta.jpg</image>
+            <category>Pasta</category>
+        </product>
+        <product id="Penne Arrabiata">
+            <name>Penne Arrabiata</name>
+            <description>Pan fried chicken, Home made pasta and spicy tomato ragu</description>
+            <price>€18.99</price>
+            <image>images/pasta.jpg</image>
+            <category>Pasta</category>
+        </product>
+        <product id="Seafood Pasta">
+            <name>Seadfood Pasta</name>
+            <description>Pan fried fresh fish and Home made pasta</description>
+            <price>€21.99</price>
+            <image>images/pasta.jpg</image>
+            <category>Pasta</category>
+        </product>
+        <product id="Meatballs">
+            <name>Soon to be famous Meatballs!</name>
+            <description>Home made pasta, tomato ragu sauce and home made Meatballs</description>
+            <price>€19.99</price>
+            <image>images/pasta.jpg</image>
+            <category>Pasta</category>
+        </product>
+    </pasta>
+    <side>
+        <product id="Fries">
+            <name>Fully loaded Fries</name>
+            <description>Handcut fries with crispy bacon and Mozzarella</description>
+            <price>€9.99</price>
+            <image>images/loadedfries.jpg</image>
+            <category>Side</category>
+        </product>
+        <product id="Garlic Bread">
+            <name>Garlic Bread</name>
+            <description>Home made Garlic Bread</description>
+            <price>€12.99</price>
+            <image>images/garlic.jpg</image>
+            <category>Side</category>
+        </product>
+        <product id="Dough Balls">
+            <name>Dough Balls</name>
+            <description>Home made Dough balls</description>
+            <price>€8.99</price>
+            <image>images/dough.jpeg</image>
+            <category>Side</category>
+        </product>
+        <product id="Pizza Rolls">
+            <name>Pizza Rolls</name>
+            <description>Home made pizza rolls</description>
+            <price>€12.99</price>
+            <image>images/rolls.jpg</image>
+            <category>Side</category>
+        </product>
+        <product id="Pizza Rolls Pepperoni">
+            <name>Pizza Rolls Pepperoni</name>
+            <description>Pepperoni filled Pizza Rolls</description>
+            <price>€14.99</price>
+            <image>images/rolls.jpg</image>
+            <category>Side</category>
+        </product>
+    </side>
+    <drinks>
+        <product id="Coca cola">
+            <name>Coca cola</name>
+            <description>Classic Cola in the iconic glass bottle</description>
+            <price>€2.49</price>
+            <image>images/coke.jpg</image>
+            <category>Drinks</category>
+        </product>
+        <product id="Fanta">
+            <name>Fanta Orange</name>
+            <description>Orange Fanta in the bottle</description>
+            <price>€1.49</price>
+            <image>images/fanta.jpg</image>
+            <category>Drinks</category>
+        </product>
+        <product id="Beer">
+            <name>Italian Beer</name>
+            <description>Imported Italian Beer</description>
+            <price>€6.99</price>
+            <image>images/beer.jpg</image>
+            <category>Drinks</category>
+        </product>
+        <product id="White Wine">
+            <name>White Wine</name>
+            <description>Bottle of White Wine</description>
+            <price>€16.99</price>
+            <image>images/wine.jpg</image>
+            <category>Drinks</category>
+        </product>
+        <product id="San Pelligrino">
+            <name>San Pelligrino</name>
+            <description>Blood Orange</description>
+            <price>€1.99</price>
+            <image>images/sanpel.png</image>
+            <category>Drinks</category>
+        </product>
+    </drinks>
+</menu>

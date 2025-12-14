@@ -1,0 +1,114 @@
+<%- include('partials/header') %>
+
+<body>
+  <!--booking information-->
+  <main class="booking-layout">
+    <section id="reserve" class="reserve">
+      <h2><%= title %></h2>
+      <p>
+        We are located at 12 Dawson Street, Dublin City Centre.
+        <br />
+        Book a table with us (limit of 6 through online reservation)
+        <br />
+        Please call or email for groups over 6 people.
+      </p>
+      <p class="contact">
+        Phone:
+        <a href="tel:+3531623344">+353 1623344</a>
+        <br />
+        Email:
+        <a href="mailto:reserve@pizzacode.ie">reserve@pizzacode.ie</a>
+      </p>
+    </section>
+
+    <!-- create a booking -->
+    <section class="reserve-form">
+      <h3>Online Reservation</h3>
+      <p class="reserve-intro">Reserve a table for up to 6 people.</p>
+      <!--input form for making a booking-->
+      <form method="POST" action="/bookings" class="reserve-form-inner">
+        <div class="field">
+          <label>Name*</label>
+          <input type="text" name="name" required />
+        </div>
+        <div class="field">
+          <label>How many people?*</label>
+          <input type="number" name="people" min="1" max="6" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Date*</label>
+            <input type="date" name="date" required />
+          </div>
+          <div class="field">
+            <label>Time*</label>
+            <input type="time" name="time" required />
+          </div>
+        </div>
+        <div class="field">
+          <label>Email*</label>
+          <input type="email" name="email" required />
+        </div>
+        <button type="submit" class="reserve-btn">Book</button>
+      </form>
+    </section>
+
+    <!--current bookings in database-->
+    <section class="reserve">
+      <h2>Current Bookings</h2>
+      <p>
+        Please avoid booking during other active booking times. If necessary
+        please call us on +353 1623344 to arrange a booking
+      </p>
+      <!--display bookings from database-->
+      <% if (bookings.length === 0) { %>
+      <p>No bookings yet.</p>
+      <% } else { %>
+      <ul>
+        <% bookings.forEach(booking => { %>
+        <li>
+          <strong>People: </strong><%= booking.people %> <br /><strong>
+            on:
+          </strong>
+          <%= booking.date %> <br /><strong>at: </strong> <%= booking.time %>
+        </li>
+        <% }) %>
+      </ul>
+      <% } %>
+    </section>
+  </main>
+  <!-- menu and vouchers page buttons-->
+  <div class="bookingButton">
+    <br />
+    <a href="/" class="page-btn">Menu</a>
+    <a href="/voucher" class="page-btn">Vouchers</a>
+  </div>
+  <br />
+  <!--takeaway and delivery section-->
+  <section id="takeaway" class="reserve">
+    <h2>Takeaway and Delivery</h2>
+    <p>
+      We also provide takeaway and delivery.
+      <br />
+      Let us know your order below
+      <br />
+    </p>
+    <label for="address">Address:</label>
+    <input type="text" id="home-delivery" required placeholder="123 House Street"/>
+    <br />
+    <label for="contact-info">Phone Number:</label>
+    <input type="text" id="contact-info" required placeholder="Eg.0851234567" />
+    <br />
+    <label for="order-info">Your Order:</label>
+    <input type="text" id="order-info" required placeholder="Eg.Just Cheese etc."/>
+    <br />
+    <label for="drinks-info">Drinks:</label>
+    <input type="text" id="drinks-info" required placeholder="Eg.Wine etc." />
+    <button onclick="takeawayForm()" type="submit" class="takeaway-btn" id="takeawayBtn">Order</button>
+    <p>YOU MUST BE OVER 18 FOR ALCOHOLIC BEVERAGES*</p>
+    <p id="takeawayMsg"></p>
+    <br />
+  </section>
+  <!--footer-->
+  <%- include('partials/footer') %>
+</body>
